@@ -1,7 +1,10 @@
+import { Contact } from "./Contact";
+
 export function Home() {
   return (
-    <div>
-      <h1>essa e o home</h1>
-    </div>
+    <>
+      <Contact />
+      <main>aqui vai o slide</main>
+    </>
   );
 }

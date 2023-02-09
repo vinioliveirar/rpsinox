@@ -56,7 +56,7 @@ export const TopBarLeft = styled.div`
       text-decoration: none;
 
       :hover {
-        color: ${(props) => props.theme.blue};
+        color: ${(props) => props.theme["blue-dark"]};
         transition: color 0.4s;
       }
     }

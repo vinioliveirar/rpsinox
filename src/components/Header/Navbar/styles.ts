@@ -39,7 +39,7 @@ export const DropDown = styled.li`
 
   :hover ul {
     top: 7.5rem;
-    width: 17rem;
+    width: 12rem;
     padding: 1.25rem;
 
     position: fixed;
@@ -48,6 +48,7 @@ export const DropDown = styled.li`
     justify-content: space-between;
 
     z-index: 100;
+    background: ${(props) => props.theme.white};
   }
   li {
     gap: 0.75rem;
@@ -56,6 +57,7 @@ export const DropDown = styled.li`
     align-items: center;
 
     a {
+      padding: 12px 0;
       font-weight: 400;
       line-height: 1.25rem;
       font-size: 15px;

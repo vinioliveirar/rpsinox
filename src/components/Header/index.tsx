@@ -46,9 +46,11 @@ export function Header() {
 
       <MainHeader>
         <LogoBox>
-          <a href="/">
-            <img src="https://www.rpsinox.com.br/images/resources/logo.png" alt="" />
-          </a>
+          <h1>
+            <a href="/">
+              <img src="https://www.rpsinox.com.br/images/resources/logo.png" alt="" />
+            </a>
+          </h1>
         </LogoBox>
         <MenuBox>
           <Navbar />
