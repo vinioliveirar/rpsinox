@@ -19,7 +19,7 @@ export const TopBarLeft = styled.div`
   p {
     font-size: 1rem;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 2rem;
     display: flex;
     align-items: center;
     font-family: "Poppins", sans-serif;
@@ -97,8 +97,8 @@ export const MenuBox = styled.div`
 
 export const BudgetButton = styled.div`
   background: ${(props) => props.theme.red};
-  padding: 20px 0;
-  margin-left: 35px;
+  padding: 1.25rem 0;
+  margin-left: 2.3rem;
   cursor: pointer;
 
   a {
@@ -107,7 +107,7 @@ export const BudgetButton = styled.div`
     justify-content: center;
     flex-direction: row;
 
-    padding: 0 20px 0;
+    padding: 0 1.25rem 0;
     gap: 0.5rem;
 
     color: ${(props) => props.theme.white};

@@ -1,3 +1,4 @@
+import { ArrowRight, CaretRight } from "phosphor-react";
 import { DropDown, Nav } from "./styles";
 
 export function Navbar() {
@@ -8,9 +9,11 @@ export function Navbar() {
           <a href="">Serviços</a>
           <ul>
             <li>
+              <ArrowRight size={24} />
               <a href="">Residencial</a>
             </li>
             <li>
+              <ArrowRight size={24} />
               <a href="">Comercial</a>
             </li>
           </ul>

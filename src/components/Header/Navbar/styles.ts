@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     flex-direction: row;
   }
   li {
-    margin-right: 35px;
+    margin-right: 2.3rem;
     list-style: none;
     text-decoration: none;
   }
@@ -19,7 +19,7 @@ export const Nav = styled.nav`
     color: ${(props) => props.theme["gray-900"]};
     font-family: "Rubik", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
 
     :hover {
@@ -30,18 +30,42 @@ export const Nav = styled.nav`
 `;
 
 export const DropDown = styled.li`
-  :hover ul {
-    top: 120px;
-    width: 270px;
-    padding: 10px;
-    position: fixed;
-    display: block;
-
-    li {
-      margin: 10px 0;
-    }
+  svg {
+    display: none;
   }
   ul {
     display: none;
+  }
+
+  :hover ul {
+    top: 7.5rem;
+    width: 17rem;
+    padding: 1.25rem;
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 100;
+  }
+  li {
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+
+    a {
+      font-weight: 400;
+      line-height: 1.25rem;
+      font-size: 15px;
+      text-transform: capitalize;
+      color: ${(props) => props.theme["gray-400"]};
+      transition: all 500ms ease 0s;
+    }
+    :hover svg {
+      display: block;
+      color: ${(props) => props.theme.red};
+    }
   }
 `;
