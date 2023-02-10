@@ -1,17 +1,33 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.section`
-  padding: 1rem 10rem;
+  @media screen and (max-width: 1020px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+  padding: 1rem 25rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 
   background: ${(props) => props.theme["gray-100"]};
 `;
 
 export const ContactContent = styled.div`
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   display: flex;
   align-items: center;
   gap: 1.5rem;

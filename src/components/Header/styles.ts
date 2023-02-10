@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const TopBar = styled.section`
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   background: ${(props) => props.theme["gray-800"]};
   color: white;
   padding: 1rem 4rem;
@@ -12,6 +17,11 @@ export const TopBar = styled.section`
 `;
 
 export const TopBarLeft = styled.div`
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -31,6 +41,12 @@ export const TopBarLeft = styled.div`
   }
 
   ul {
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
     display: flex;
     justify-content: space-around;
     padding-left: 1.25rem;
@@ -64,6 +80,10 @@ export const TopBarLeft = styled.div`
 `;
 
 export const TopBarRight = styled.div`
+  display: flex;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
   svg {
     color: ${(props) => props.theme["gray-400"]};
     margin: 0 0.75rem;
@@ -77,6 +97,11 @@ export const TopBarRight = styled.div`
 `;
 
 export const MainHeader = styled.div`
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -85,18 +110,35 @@ export const MainHeader = styled.div`
 
 export const LogoBox = styled.div`
   img {
+    @media screen and (max-width: 800px) {
+      width: 8rem;
+    }
     width: 12.5rem;
   }
 `;
 
+export const MenuBoxMobile = styled.div`
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+  display: none;
+`;
+
 export const MenuBox = styled.div`
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const BudgetButton = styled.div`
   background: ${(props) => props.theme.red};
+  height: 50px;
+  display: flex;
+  align-items: center;
   padding: 1.25rem 0;
   margin-left: 2.3rem;
   cursor: pointer;
