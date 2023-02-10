@@ -102,6 +102,7 @@ export const MainHeader = styled.div`
     flex-direction: row;
     gap: 1rem;
   }
+  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
