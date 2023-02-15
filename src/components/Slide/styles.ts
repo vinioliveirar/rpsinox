@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { SwiperSlide, Swiper } from "swiper/react";
 
 export const SwiperContainer = styled(Swiper)`
-  height: 700px;
+  height: 800px;
   position: relative;
 
   .swiper-button-next,
@@ -25,11 +25,17 @@ export const SwiperSlideStyled = styled(SwiperSlide)`
 `;
 
 export const SwiperSlideContent = styled.div`
-  position: absolute;
+  color: white;
+
   top: 0;
   z-index: 100;
-  color: white;
   padding: 15rem 20rem;
+  gap: 1rem;
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 
   h2 {
     position: relative;

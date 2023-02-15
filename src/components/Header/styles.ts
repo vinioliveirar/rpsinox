@@ -134,34 +134,3 @@ export const MenuBox = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
-
-export const BudgetButton = styled.div`
-  background: ${(props) => props.theme.red};
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding: 1.25rem 0;
-  margin-left: 2.3rem;
-  cursor: pointer;
-
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
-    padding: 0 1.25rem 0;
-    gap: 0.5rem;
-
-    color: ${(props) => props.theme.white};
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: capitalize;
-    font-family: "Rubik", sans-serif;
-  }
-
-  :hover {
-    background: ${(props) => props.theme["gray-800"]};
-    transition: background-color 0.4s;
-  }
-`;

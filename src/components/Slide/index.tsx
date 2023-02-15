@@ -3,6 +3,7 @@ import "swiper/css/navigation";
 import { Swiper } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import { SwiperContainer, SwiperSlideContent, SwiperSlideStyled } from "./styles";
+import { BudgetButton } from "../BudgetButton";
 
 export default function Slide() {
   return (
@@ -28,6 +29,9 @@ export default function Slide() {
                 Projeto exclusivo no <strong>Milésimo McDonalds`s</strong>
               </p>
             </div>
+            <div>
+              <BudgetButton text="Ver Projetos" />
+            </div>
           </SwiperSlideContent>
         </SwiperSlideStyled>
         <SwiperSlideStyled>
@@ -42,6 +46,9 @@ export default function Slide() {
                 Planejados são a melhor opção para otimizar espaços
                 <br />e deixar o espaço do jeito que você quer.
               </p>
+            </div>
+            <div>
+              <BudgetButton text="Ver Projetos" />
             </div>
           </SwiperSlideContent>
         </SwiperSlideStyled>

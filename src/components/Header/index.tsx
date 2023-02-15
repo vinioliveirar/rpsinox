@@ -1,9 +1,9 @@
 import { CaretDoubleRight, FacebookLogo, Headset, InstagramLogo } from "phosphor-react";
+import { BudgetButton } from "../BudgetButton";
 
 import { Navbar } from "./Navbar";
 import { NavbarMobile } from "./NavbarMobile";
 import {
-  BudgetButton,
   LogoBox,
   MainHeader,
   MenuBox,
@@ -12,9 +12,6 @@ import {
   TopBarLeft,
   TopBarRight,
 } from "./styles";
-
-function openMenuMobile() {}
-
 export function Header() {
   return (
     <>
@@ -63,12 +60,7 @@ export function Header() {
           </MenuBoxMobile>
           <MenuBox>
             <Navbar />
-
-            <BudgetButton>
-              <a href="">
-                Solicite um Orçamento <CaretDoubleRight size={24} />
-              </a>
-            </BudgetButton>
+            <BudgetButton text="Solicite um orçamento" />
           </MenuBox>
         </MainHeader>
       </header>
