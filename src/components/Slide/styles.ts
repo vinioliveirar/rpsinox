@@ -28,6 +28,9 @@ export const SwiperWrapper = styled.section`
   margin: 0 auto;
   top: 10rem;
   position: absolute;
+  @media screen and (max-width: 800px) {
+    top: 2rem;
+  }
 `;
 
 export const SwiperSlideContent = styled.div`
@@ -60,5 +63,16 @@ export const SwiperSlideContent = styled.div`
     line-height: 1.5em;
     font-weight: 400;
     font-family: "Rubik", sans-serif;
+  }
+
+  @media screen and (max-width: 800px) {
+    align-items: center;
+    max-width: 400px;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 `;
