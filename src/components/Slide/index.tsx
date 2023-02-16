@@ -59,45 +59,6 @@ export default function Slide() {
             </SwiperSlideStyled>
           );
         })}
-
-        {/* <SwiperSlideStyled>
-          <img src={`/images/${informations.image}`} alt="" />
-          <SwiperWrapper>
-            <SwiperSlideContent>
-              <div>
-                <h2>Méqui 1000</h2>
-              </div>
-              <div>
-                <p>
-                  Tivemos o imenso prazer de fazer parte desta grande historia. <br />
-                  Projeto exclusivo no <strong>Milésimo McDonalds`s</strong>
-                </p>
-              </div>
-              <div>
-                <BudgetButton text="Ver Projetos" />
-              </div>
-            </SwiperSlideContent>
-          </SwiperWrapper>
-        </SwiperSlideStyled> */}
-
-        {/* <SwiperSlideStyled>
-          <img src="https://www.rpsinox.com.br/images/slides/hospital-corrimao.jpg" alt="" />
-
-          <SwiperSlideContent>
-            <div>
-              <h2>Planejados</h2>
-            </div>
-            <div>
-              <p>
-                Planejados são a melhor opção para otimizar espaços
-                <br />e deixar o espaço do jeito que você quer.
-              </p>
-            </div>
-            <div>
-              <BudgetButton text="Ver Projetos" />
-            </div>
-          </SwiperSlideContent>
-        </SwiperSlideStyled> */}
       </SwiperContainer>
     </>
   );
