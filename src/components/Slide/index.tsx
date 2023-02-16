@@ -2,7 +2,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
-import { SwiperContainer, SwiperSlideContent, SwiperSlideStyled } from "./styles";
+import { SwiperContainer, SwiperSlideContent, SwiperSlideStyled, SwiperWrapper } from "./styles";
 import { BudgetButton } from "../BudgetButton";
 
 export default function Slide() {
@@ -19,22 +19,25 @@ export default function Slide() {
       >
         <SwiperSlideStyled>
           <img src="https://www.rpsinox.com.br/images/slides/mequi-1000-2.jpg" alt="" />
-          <SwiperSlideContent>
-            <div>
-              <h2>Méqui 1000</h2>
-            </div>
-            <div>
-              <p>
-                Tivemos o imenso prazer de fazer parte desta grande historia. <br />
-                Projeto exclusivo no <strong>Milésimo McDonalds`s</strong>
-              </p>
-            </div>
-            <div>
-              <BudgetButton text="Ver Projetos" />
-            </div>
-          </SwiperSlideContent>
+          <SwiperWrapper>
+            <SwiperSlideContent>
+              <div>
+                <h2>Méqui 1000</h2>
+              </div>
+              <div>
+                <p>
+                  Tivemos o imenso prazer de fazer parte desta grande historia. <br />
+                  Projeto exclusivo no <strong>Milésimo McDonalds`s</strong>
+                </p>
+              </div>
+              <div>
+                <BudgetButton text="Ver Projetos" />
+              </div>
+            </SwiperSlideContent>
+          </SwiperWrapper>
         </SwiperSlideStyled>
-        <SwiperSlideStyled>
+
+        {/* <SwiperSlideStyled>
           <img src="https://www.rpsinox.com.br/images/slides/hospital-corrimao.jpg" alt="" />
 
           <SwiperSlideContent>
@@ -51,7 +54,7 @@ export default function Slide() {
               <BudgetButton text="Ver Projetos" />
             </div>
           </SwiperSlideContent>
-        </SwiperSlideStyled>
+        </SwiperSlideStyled> */}
       </SwiperContainer>
     </>
   );

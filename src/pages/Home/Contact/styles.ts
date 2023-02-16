@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const ContactContainer = styled.section`
+export const ContactWrapper = styled.section`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: ${(props) => props.theme["gray-100"]};
+`;
+export const ContactContainer = styled.div`
   @media screen and (max-width: 1020px) {
     display: flex;
     flex-direction: column;
@@ -11,13 +17,12 @@ export const ContactContainer = styled.section`
   @media screen and (max-width: 500px) {
     display: none;
   }
-  padding: 1rem 25rem;
+
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  background: ${(props) => props.theme["gray-100"]};
 `;
 
 export const ContactContent = styled.div`
@@ -31,6 +36,7 @@ export const ContactContent = styled.div`
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  margin: 0 2rem;
 
   svg {
     color: ${(props) => props.theme["gray-400"]};
