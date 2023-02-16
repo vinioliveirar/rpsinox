@@ -8,7 +8,7 @@ export function Home() {
       <Contact />
       <main>
         <Slide />
-        <HighLights />
+        {/* <HighLights /> */}
       </main>
     </>
   );

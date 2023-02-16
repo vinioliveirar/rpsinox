@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { SwiperSlide, Swiper } from "swiper/react";
 
 export const SwiperContainer = styled(Swiper)`
+  height: 80vh;
   .swiper-button-next,
   .swiper-button-prev {
     color: white;
@@ -14,10 +15,11 @@ export const SwiperContainer = styled(Swiper)`
 
 export const SwiperSlideStyled = styled(SwiperSlide)`
   img {
+    height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
   }
 `;
 
@@ -39,8 +41,8 @@ export const SwiperSlideContent = styled.div`
   margin: 0 auto;
 
   z-index: 100;
-  padding: 1rem 0;
-  gap: 1rem;
+  padding: 4rem;
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -55,7 +57,7 @@ export const SwiperSlideContent = styled.div`
   }
 
   p {
-    padding-top: 1rem;
+    width: 60%;
     position: relative;
     display: block;
     color: #ffffff;
@@ -65,9 +67,11 @@ export const SwiperSlideContent = styled.div`
     font-family: "Rubik", sans-serif;
   }
 
-  @media screen and (max-width: 800px) {
-    align-items: center;
+  @media screen and (max-width: 600px) {
+    align-items: stretch;
     max-width: 400px;
+    gap: 5px;
+    padding: 0 30px;
     h2 {
       font-size: 2rem;
     }

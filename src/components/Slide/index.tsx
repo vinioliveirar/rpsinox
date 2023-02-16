@@ -47,8 +47,8 @@ export default function Slide() {
                   </div>
                   <div>
                     <p>
-                      {information.description} <br />
-                      <strong>{information.stongDescription}</strong>
+                      {information.description}
+                      <strong> {information.stongDescription}</strong>
                     </p>
                   </div>
                   <div>

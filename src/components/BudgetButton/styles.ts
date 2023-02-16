@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const BudgetButtonContainer = styled.div`
+  @media screen and (max-width: 400px) {
+    height: 30px;
+    width: 12rem;
+  }
   background: ${(props) => props.theme.red};
   height: 50px;
-  width: 16rem;
+  width: 14rem;
   display: flex;
   align-items: center;
   padding: 1.25rem 0;
@@ -18,13 +22,13 @@ export const BudgetButtonContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
-    padding: 0 1.25rem 0;
     gap: 0.5rem;
 
     color: ${(props) => props.theme.white};
     text-decoration: none;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
     text-transform: capitalize;
     font-family: "Rubik", sans-serif;
   }
