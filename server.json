@@ -1,0 +1,18 @@
+{
+  "informations": [
+    {
+      "id": 1,
+      "image": "mequi-1000.jpeg",
+      "title": "Méqui 1000",
+      "description": "Tivemos o imenso prazer de fazer parte desta grande historia Projeto exclusivo no",
+      "stongDescription": "Milésimo McDonalds`s"
+    },
+    {
+      "id": 2,
+      "image": "hospital-corrimao.jpeg",
+      "title": "Planejados",
+      "description": "Planejados são a melhor opção para otimizar espaços e deixar o espaço do jeito que você quer",
+      "stongDescription": ""
+    }
+  ]
+}
