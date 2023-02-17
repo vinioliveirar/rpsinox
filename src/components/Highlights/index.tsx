@@ -1,4 +1,5 @@
-import { Card, CardsContent, HighlightsArea } from "./styles";
+import { Perspective } from "phosphor-react";
+import { Card, CardsContent, HighlightsArea, IconHolder } from "./styles";
 
 export function HighLights() {
   return (
@@ -6,8 +7,12 @@ export function HighLights() {
       <CardsContent>
         <Card>
           <header>
-            <img src="" alt="" />
-            <h3>Concepão & Design</h3>
+            <IconHolder>
+              <Perspective size={70} />
+            </IconHolder>
+            <div>
+              <h3>Concepção & Design</h3>
+            </div>
           </header>
           <div>
             <p>iashdiahsdiahsidahsd</p>
