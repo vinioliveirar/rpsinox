@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { SwiperSlide, Swiper } from "swiper/react";
 
 export const SwiperContainer = styled(Swiper)`
-  height: 80vh;
+  @media screen and (max-width: 500px) {
+    height: 80%;
+  }
+  height: 90vh;
   .swiper-button-next,
   .swiper-button-prev {
     color: white;
